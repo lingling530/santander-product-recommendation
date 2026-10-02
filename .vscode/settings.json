@@ -1,0 +1,22 @@
+{
+  "python.defaultInterpreterPath": "/Users/tranglinh/prop-final/prop-final-venv/bin/python",
+  "python.venvFolders": ["prop-final", "Code/Stroke-prediction"],
+  "terminal.integrated.env.osx": { "PATH": "/Library/TeX/texbin:${env:PATH}" },
+  "latex-workshop.latex.tools": [
+    {
+      "name": "latexmk-xelatex",
+      "command": "/Library/TeX/texbin/latexmk",
+      "args": ["-xelatex", "-synctex=1", "-interaction=nonstopmode", "-file-line-error", "-outdir=%OUTDIR%", "-auxdir=%OUTDIR%/.build", "%DOC%"],
+      "env": { "PATH": "/Library/TeX/texbin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin" }
+    }
+  ],
+  "latex-workshop.latex.recipes": [
+    { "name": "latexmk (xelatex)", "tools": ["latexmk-xelatex"] }
+  ],
+  "latex-workshop.latex.build.enableMagicComments": false,
+  "latex-workshop.kpsewhich.path": "/Library/TeX/texbin/kpsewhich",
+  "latex-workshop.latex.autoBuild.run": "onSave",
+  "latex-workshop.view.pdf.viewer": "tab",
+  "workbench.editorAssociations": { "*.pdf": "latex-workshop-pdf-hook" },
+  "python-envs.pythonProjects": []
+}
